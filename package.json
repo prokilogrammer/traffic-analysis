@@ -1,0 +1,27 @@
+{
+  "name": "traffic-analysis",
+  "version": "0.0.0",
+  "description": "Scrapes traffic data and analyzes it for insights",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prokilogrammer/traffic-analysis.git"
+  },
+  "author": "Sanath",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prokilogrammer/traffic-analysis/issues"
+  },
+  "homepage": "https://github.com/prokilogrammer/traffic-analysis",
+  "dependencies": {
+    "async": "^0.9.0",
+    "lodash": "^2.4.1",
+    "moment": "^2.8.3",
+    "mongodb": "^1.4.12",
+    "mongojs": "^0.14.1",
+    "request": "^2.44.0"
+  }
+}

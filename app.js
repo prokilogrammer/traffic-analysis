@@ -92,7 +92,7 @@ async.waterfall([
                     resp.zoneOffset = zoneOffset;
                 }
 
-                dataCollection.update({Time: resp.Time}, {'$setOnInsert': resp}, {upsert: true}, function(err){eachcb(err)});
+                dataCollection.update({FlowDataID: resp.FlowDataID, Time: resp.Time}, {'$setOnInsert': resp}, {upsert: true}, function(err){eachcb(err)});
             },
 
             function(err) {cb(err)}

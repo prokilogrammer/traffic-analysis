@@ -5,8 +5,11 @@ var _ = require('lodash');
 var querystring = require('querystring');
 var request = require('request');
 
-var dbUrl = "127.0.0.1:27017/trafficdb";
+var dbUrl = "mongodb://127.0.0.1:27017/trafficdb";
+if (process.env.MONGOHQ_URL)
+    dbUrl = process.env.MONGOHQ_URL
 
+console.log("Connecting to " + dbUrl);
 var db = mongojs(dbUrl);
 var configCollection = db.collection('traffic.config');
 var dataCollection = db.collection('traffic.data');
